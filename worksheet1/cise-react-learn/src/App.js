@@ -11,7 +11,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="aut.ac.nz"
+Development
+          href="https://www.aut.ac.nz/"
+=======
+          href="https://www.aut.ac.nz/"
+LogoLink
           target="_blank"
           rel="noopener noreferrer"
         >
