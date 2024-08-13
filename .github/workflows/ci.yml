@@ -25,14 +25,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: /home/runner/work/CISE_Repos/worksheet2/my-nest-app
+        working-directory: C:\CISE_Repos
 
       - name: Run the tests
         run: npm test
-        working-directory: /home/runner/work/CISE_Repos/worksheet2/my-nest-app
-
+        working-directory: C:\CISE_Repos
 
       - name: Build
         run: npm run build
-        working-directory: /home/runner/work/CISE_Repos/worksheet2/my-nest-app
+        working-directory: C:\CISE_Repos
 
