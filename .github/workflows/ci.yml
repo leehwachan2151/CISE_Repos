@@ -25,13 +25,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: C:\CISE_Repos
 
       - name: Run the tests
         run: npm test
-        working-directory: C:\CISE_Repos
 
       - name: Build
         run: npm run build
-        working-directory: C:\CISE_Repos
 
