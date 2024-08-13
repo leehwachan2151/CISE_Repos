@@ -25,13 +25,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: my-react-app
+        working-directory: ./my-react-app
 
       - name: Run the tests
         run: npm test
-        working-directory: my-react-app
+        working-directory: ./my-react-app
 
       - name: Build
         run: npm run build
-        working-directory: my-react-app
+        working-directory: ./my-react-app
 
