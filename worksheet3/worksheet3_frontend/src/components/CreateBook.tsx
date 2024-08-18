@@ -14,7 +14,7 @@ const CreateBookComponent = () => {
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log(book);
-    fetch(process.env.NEXT_PUBLIC_BACKEND_URL + `/api/books/${id}`, {
+    fetch(process.env.NEXT_PUBLIC_BACKEND_URL + `/api/books/`, {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(book),
@@ -97,7 +97,7 @@ const CreateBookComponent = () => {
                   placeholder="Published Date"
                   name="published_date"
                   className="form-control"
-                  value={book.published_date?.toISOString().split('T')[0]}
+                  value={book.published_date?.toString()}
                   onChange={onChange}
                 />
               </div>
